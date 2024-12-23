@@ -153,6 +153,7 @@ function App() {
           contentEditable
           onInput={handleInput}
           suppressContentEditableWarning
+          data-placeholder="write something..."
         />
       </div>
       {showAutocomplete && (

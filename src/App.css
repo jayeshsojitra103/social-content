@@ -16,3 +16,25 @@
 .autocomplete-item:hover {
   background-color: #f1f1f1;
 }
+
+/* App.css */
+[contenteditable="true"]:empty::before {
+  content: attr(data-placeholder);
+  color: #a0aec0; /* Gray color */
+  font-size: 1.125rem;
+  position: absolute;
+  pointer-events: none;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.content-editable-container {
+  position: relative;
+}
+
+[contenteditable="true"] {
+  outline: none;
+  min-height: 2.5rem;
+  padding: 10px;
+}
